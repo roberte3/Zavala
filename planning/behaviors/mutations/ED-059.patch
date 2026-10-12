@@ -1,0 +1,17 @@
+diff --git a/VinOutlineKit/Sources/VinOutlineKit/Outline.swift b/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
+index 4b6bffc0..dbcafb3d 100644
+--- a/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
++++ b/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
+@@ -1750,6 +1750,12 @@ public final class Outline: RowContainer, Identifiable, Equatable, Hashable {
+ 		
+ 		requestCloudKitUpdate(for: topRow.entityID)
+ 		updateRowStrings(topRow, .topic(topic))
++		if let bottomNote = bottomRow.note {
++			let merged = NSMutableAttributedString(attributedString: topRow.note ?? NSAttributedString())
++			if merged.length > 0 { merged.append(NSAttributedString(string: "\n")) }
++			merged.append(bottomNote)
++			updateRowStrings(topRow, .note(merged))
++		}
+ 		deleteRows([bottomRow])
+ 		
+ 		guard isBeingViewed, let topShadowTableIndex = topRow.shadowTableIndex else { return }

@@ -1,0 +1,13 @@
+diff --git a/VinOutlineKit/Sources/VinOutlineKit/Outline.swift b/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
+index 4b6bffc0..b76a15ef 100644
+--- a/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
++++ b/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
+@@ -2189,7 +2189,7 @@ public final class Outline: RowContainer, Identifiable, Equatable, Hashable {
+ 
+ 		let newTopicRange = NSRange(location: cursorPosition, length: topic.length - cursorPosition)
+ 		let newTopicText = topic.attributedSubstring(from: newTopicRange)
+-		newRow.topic = newTopicText
++		newRow.topic = NSAttributedString(string: newTopicText.string)
+ 		
+ 		let topicRange = NSRange(location: 0, length: cursorPosition)
+ 		let topicText = topic.attributedSubstring(from: topicRange)

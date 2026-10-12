@@ -1,0 +1,13 @@
+diff --git a/Zavala/Editor/Row/EditorRowTextView.swift b/Zavala/Editor/Row/EditorRowTextView.swift
+index 0daf2828..777d2409 100644
+--- a/Zavala/Editor/Row/EditorRowTextView.swift
++++ b/Zavala/Editor/Row/EditorRowTextView.swift
+@@ -265,8 +265,6 @@ class EditorRowTextView: UITextView, EditorTextInput {
+ 		if selectedRange.length > 0 && UIPasteboard.general.hasURLs, let url = UIPasteboard.general.url {
+ 			textStorage.addAttribute(.link, value: url, range: selectedRange)
+ 			textWasChanged()
+-		} else {
+-			super.paste(sender)
+ 		}
+ 	}
+ 	

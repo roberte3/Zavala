@@ -1,6 +1,5 @@
 # Spec: Zavala Behavior Suite
 
-Intent: `planning/intent/behavior-test-suite.md` (confirmed 2026-10-09).
 Harness lessons (read before writing tests or changing tools): `planning/behaviors/HARNESS-NOTES.md`.
 
 ## Objective
@@ -91,7 +90,6 @@ When a behavior legitimately differs between Mac and iPad (e.g. a Mac-only menu 
 
 ```
 SPEC.md                              ← this file
-planning/intent/                     ← confirmed intent docs
 planning/behaviors/BEHAVIORS.md      ← the inventory (source of truth)
 planning/behaviors/DIVERGENCES.md    ← intended breaks, newest first
 tools/behavior-report.sh             ← runs layers, prints failures by behavior ID

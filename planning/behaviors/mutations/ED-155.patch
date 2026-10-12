@@ -1,0 +1,13 @@
+diff --git a/Zavala/Editor/Row/EditorRowTopicTextView.swift b/Zavala/Editor/Row/EditorRowTopicTextView.swift
+index b63c01be..f9cf2744 100644
+--- a/Zavala/Editor/Row/EditorRowTopicTextView.swift
++++ b/Zavala/Editor/Row/EditorRowTopicTextView.swift
+@@ -165,7 +165,7 @@ class EditorRowTopicTextView: EditorRowTextView {
+ 	}
+ 	
+ 	@objc func insertTab(_ sender: Any) {
+-		insertText("\t")
++		insertText("    ")
+ 	}
+ 	
+ 	@objc func insertRow(_ sender: Any) {

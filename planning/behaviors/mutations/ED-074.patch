@@ -1,0 +1,13 @@
+diff --git a/VinOutlineKit/Sources/VinOutlineKit/Outline.swift b/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
+index 4b6bffc0..611941c9 100644
+--- a/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
++++ b/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
+@@ -1718,7 +1718,7 @@ public final class Outline: RowContainer, Identifiable, Equatable, Hashable {
+ 			if let firstDelete = rows.first?.shadowTableIndex, firstDelete >= 0 {
+ 				let shadowTableCount = shadowTable?.count ?? 0
+ 				if firstDelete < shadowTableCount {
+-					changes.newSelectIndex = firstDelete
++					changes.newSelectIndex = firstDelete > 0 ? firstDelete - 1 : 0
+ 				} else if shadowTableCount > 0 {
+ 					changes.newSelectIndex = shadowTableCount - 1
+ 				}

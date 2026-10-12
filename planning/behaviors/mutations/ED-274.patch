@@ -1,0 +1,12 @@
+diff --git a/Zavala/Editor/Row/EditorRowTopicTextView.swift b/Zavala/Editor/Row/EditorRowTopicTextView.swift
+index b63c01be..21705b08 100644
+--- a/Zavala/Editor/Row/EditorRowTopicTextView.swift
++++ b/Zavala/Editor/Row/EditorRowTopicTextView.swift
+@@ -324,6 +324,7 @@ extension EditorRowTopicTextView: UITextViewDelegate {
+ 			}
+ 			return false
+ 		default:
++			typingAttributes[.font] = nil
+ 			return true
+ 		}
+ 	}

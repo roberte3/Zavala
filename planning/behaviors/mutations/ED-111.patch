@@ -1,0 +1,12 @@
+diff --git a/VinOutlineKit/Sources/VinOutlineKit/Row.swift b/VinOutlineKit/Sources/VinOutlineKit/Row.swift
+index 452d3746..4a5294cf 100644
+--- a/VinOutlineKit/Sources/VinOutlineKit/Row.swift
++++ b/VinOutlineKit/Sources/VinOutlineKit/Row.swift
+@@ -191,7 +191,6 @@ public final class Row: NSObject, NSCopying, RowContainer, Identifiable {
+ 	}
+ 	
+ 	public var isCollapsable: Bool {
+-		guard rows.count > 0 else { return false }
+ 		return isExpanded
+ 	}
+ 	

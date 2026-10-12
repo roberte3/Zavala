@@ -1,0 +1,13 @@
+diff --git a/VinOutlineKit/Sources/VinOutlineKit/Outline.swift b/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
+index 4b6bffc0..2c17bf10 100644
+--- a/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
++++ b/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
+@@ -2696,7 +2696,7 @@ public final class Outline: RowContainer, Identifiable, Equatable, Hashable {
+ 			if rowMove.toChildIndex >= rowMove.toParent.rows.count {
+ 				rowMove.toParent.appendRow(rowMove.row)
+ 			} else {
+-				rowMove.toParent.insertRow(rowMove.row, at: rowMove.toChildIndex)
++				rowMove.toParent.insertRow(rowMove.row, at: 0)
+ 			}
+ 			
+ 			rowMove.row.parent = rowMove.toParent

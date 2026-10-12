@@ -1,0 +1,13 @@
+diff --git a/Zavala/Editor/EditorViewController.swift b/Zavala/Editor/EditorViewController.swift
+index 6182c20a..01bc12b3 100644
+--- a/Zavala/Editor/EditorViewController.swift
++++ b/Zavala/Editor/EditorViewController.swift
+@@ -364,7 +364,7 @@ class EditorViewController: UIViewController, DocumentsActivityItemsConfiguratio
+ 
+ 	// The narrowest we can get before the Focus item has to leave the navigation bar for the More menu
+ 	private static let focusBarButtonItemMinimumWidth = 400.0
+-	private var childRowIndent = AppDefaults.shared.createRows == .indentedWithChildren
++	private var childRowIndent = true
+ 	private var rowIndentSize = AppDefaults.shared.rowIndentSize
+ 	private var rowSpacingSize = AppDefaults.shared.rowSpacingSize
+ 	private var showShortcutsMenu = AppDefaults.shared.showShortcutsMenu

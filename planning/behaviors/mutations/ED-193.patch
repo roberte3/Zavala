@@ -1,0 +1,13 @@
+diff --git a/VinOutlineKit/Sources/VinOutlineKit/Commands/RemoteDropRowCommand.swift b/VinOutlineKit/Sources/VinOutlineKit/Commands/RemoteDropRowCommand.swift
+index b8dea222..7a9dd13f 100644
+--- a/VinOutlineKit/Sources/VinOutlineKit/Commands/RemoteDropRowCommand.swift
++++ b/VinOutlineKit/Sources/VinOutlineKit/Commands/RemoteDropRowCommand.swift
+@@ -41,7 +41,7 @@ public final class RemoteDropRowCommand: OutlineCommand {
+ 		rows = newRows
+ 		
+ 		// This helps Outline understand that this is a drop-into
+-		if afterRowIsNewParent {
++		if false {
+ 			for row in rows {
+ 				row.parent = afterRow
+ 			}

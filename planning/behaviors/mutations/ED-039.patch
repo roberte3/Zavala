@@ -1,0 +1,14 @@
+diff --git a/VinOutlineKit/Sources/VinOutlineKit/Commands/CreateRowInsideCommand.swift b/VinOutlineKit/Sources/VinOutlineKit/Commands/CreateRowInsideCommand.swift
+index 16f8c166..764d0793 100644
+--- a/VinOutlineKit/Sources/VinOutlineKit/Commands/CreateRowInsideCommand.swift
++++ b/VinOutlineKit/Sources/VinOutlineKit/Commands/CreateRowInsideCommand.swift
+@@ -27,9 +27,6 @@ public final class CreateRowInsideCommand: OutlineCommand {
+ 			row = Row(outline: outline)
+ 		}
+ 		
+-		if afterRow.isExpandable {
+-			expandedRow = outline.expand(rows: [afterRow]).first
+-		}
+ 		
+ 		outline.createRowsInsideAtStart([row!], afterRowContainer: afterRow, rowStrings: rowStrings)
+ 	}

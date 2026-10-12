@@ -1,0 +1,18 @@
+diff --git a/VinOutlineKit/Sources/VinOutlineKit/Outline.swift b/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
+index 4b6bffc0..dceb3447 100644
+--- a/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
++++ b/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
+@@ -2638,9 +2638,10 @@ public final class Outline: RowContainer, Identifiable, Equatable, Hashable {
+ 	func moveRows(_ rowMoves: [RowMove], rowStrings: RowStrings? = nil) {
+ 		// Never allow a row to be moved into itself or one of its own descendants. Doing so would
+ 		// create a cycle in the row tree and cause infinite recursion when reindexing the rows.
+-		let rowMoves = rowMoves.filter { rowMove in
+-			guard let destinationRow = rowMove.toParent as? Row else { return true }
+-			return destinationRow != rowMove.row && !destinationRow.isDecendent(rowMove.row)
++		let rowMoves = rowMoves.map { rowMove in
++			guard let destinationRow = rowMove.toParent as? Row else { return rowMove }
++			if destinationRow != rowMove.row && !destinationRow.isDecendent(rowMove.row) { return rowMove }
++			return RowMove(row: rowMove.row, toParent: self, toChildIndex: rows.count)
+ 		}
+ 
+ 		guard !rowMoves.isEmpty else { return }

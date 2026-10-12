@@ -1,0 +1,13 @@
+diff --git a/Zavala/Utility/StackedUndoManager.swift b/Zavala/Utility/StackedUndoManager.swift
+index f5a78201..d3aab706 100644
+--- a/Zavala/Utility/StackedUndoManager.swift
++++ b/Zavala/Utility/StackedUndoManager.swift
+@@ -70,7 +70,7 @@ class StackedUndoManger: UndoManager {
+ 
+ 	override func undo() {
+ 		if mainUndoManager.canUndo {
+-			mainUndoManager.undo()
++			return
+ 		} else {
+ 			fallBackUndoManager.undo()
+ 		}

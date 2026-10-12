@@ -1,0 +1,12 @@
+diff --git a/Zavala/Editor/EditorViewController.swift b/Zavala/Editor/EditorViewController.swift
+index 6182c20a..7e9ebec5 100644
+--- a/Zavala/Editor/EditorViewController.swift
++++ b/Zavala/Editor/EditorViewController.swift
+@@ -2964,7 +2964,6 @@ private extension EditorViewController {
+ 				tagInput.selectAbove()
+ 				return
+ 			} else {
+-				moveCursorToTitle()
+ 			}
+ 		}
+ 		

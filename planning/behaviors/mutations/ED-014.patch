@@ -1,0 +1,21 @@
+diff --git a/VinOutlineKit/Sources/VinOutlineKit/Outline.swift b/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
+index 4b6bffc0..c09b8594 100644
+--- a/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
++++ b/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
+@@ -2411,7 +2411,6 @@ public final class Outline: RowContainer, Identifiable, Equatable, Hashable {
+ 				  let newParentRow = row.parent?.rows[rowIndex - 1] else { continue }
+ 
+ 			impacted.append(row)
+-			expand(row: newParentRow)
+ 			
+ 			// Don't grab this until we expand or it won't be correctly recalculated
+ 			guard let rowShadowTableIndex = row.shadowTableIndex else { continue }
+@@ -2420,8 +2419,6 @@ public final class Outline: RowContainer, Identifiable, Equatable, Hashable {
+ 			container.removeRow(row)
+ 			newParentRow.appendRow(row)
+ 
+-			newParentRow.isExpanded = true
+-
+ 			autoCompleteUncomplete(row: newParentRow)
+ 			
+ 			// If the new parent row doesn't have a shadow table index, it is because it is filtered

@@ -1,0 +1,13 @@
+diff --git a/Zavala/Editor/Row/EditorRowViewCell.swift b/Zavala/Editor/Row/EditorRowViewCell.swift
+index cce5f752..83ac03b4 100644
+--- a/Zavala/Editor/Row/EditorRowViewCell.swift
++++ b/Zavala/Editor/Row/EditorRowViewCell.swift
+@@ -69,7 +69,7 @@ class EditorRowViewCell: UICollectionViewListCell {
+ 		}
+ 		
+ 		let isDisclosureVisible = row.rows.count != 0
+-		let isNotesVisible = !(row.outline?.isNotesFilterOn ?? false) && !row.isNoteEmpty
++		let isNotesVisible = !row.isNoteEmpty
+ 		let isSelected = state.isSelected
+ 		let hasChildren = row.rows.count > 0
+ 		

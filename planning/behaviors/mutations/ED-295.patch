@@ -1,0 +1,13 @@
+diff --git a/Zavala/Editor/EditorViewController.swift b/Zavala/Editor/EditorViewController.swift
+index 6182c20a..8234284a 100644
+--- a/Zavala/Editor/EditorViewController.swift
++++ b/Zavala/Editor/EditorViewController.swift
+@@ -3242,7 +3242,7 @@ private extension EditorViewController {
+ 	func moveCursorToFirstRow() {
+ 		if outline?.shadowTable?.count ?? 0 > 0 {
+ 			if let rowCell = collectionView.cellForItem(at: IndexPath(row: 0, section: adjustedRowsSection)) as? EditorRowViewCell {
+-				rowCell.moveToTopicEnd()
++				rowCell.moveToTopicStart()
+ 			}
+ 		}
+ 	}

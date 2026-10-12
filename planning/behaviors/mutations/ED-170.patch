@@ -1,0 +1,12 @@
+diff --git a/Zavala/Editor/EditorViewController.swift b/Zavala/Editor/EditorViewController.swift
+index 6182c20a..9983bc06 100644
+--- a/Zavala/Editor/EditorViewController.swift
++++ b/Zavala/Editor/EditorViewController.swift
+@@ -3775,7 +3775,6 @@ private extension EditorViewController {
+ 				return nil
+ 			}
+ 			
+-			itemProviders.append(rowItemProvider)
+ 		}
+ 		
+ 		UIPasteboard.general.setItemProviders(itemProviders, localOnly: false, expirationDate: nil)

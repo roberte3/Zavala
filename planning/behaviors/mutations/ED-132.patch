@@ -1,0 +1,13 @@
+diff --git a/VinOutlineKit/Sources/VinOutlineKit/Row.swift b/VinOutlineKit/Sources/VinOutlineKit/Row.swift
+index 452d3746..9c813b85 100644
+--- a/VinOutlineKit/Sources/VinOutlineKit/Row.swift
++++ b/VinOutlineKit/Sources/VinOutlineKit/Row.swift
+@@ -217,7 +217,7 @@ public final class Row: NSObject, NSCopying, RowContainer, Identifiable {
+ 			}
+ 		}
+ 		
+-		return foundOneChildCompleted
++		return false
+ 	}
+ 	
+ 	public var isUncompletable: Bool {

@@ -1,0 +1,13 @@
+diff --git a/VinOutlineKit/Sources/VinOutlineKit/Commands/CollapseCommand.swift b/VinOutlineKit/Sources/VinOutlineKit/Commands/CollapseCommand.swift
+index 1e61c220..ad76093e 100644
+--- a/VinOutlineKit/Sources/VinOutlineKit/Commands/CollapseCommand.swift
++++ b/VinOutlineKit/Sources/VinOutlineKit/Commands/CollapseCommand.swift
+@@ -19,7 +19,7 @@ public final class CollapseCommand: OutlineCommand {
+ 	}
+ 	
+ 	override public func perform() {
+-		collapsedRows = outline.collapse(rows: rows)
++		collapsedRows = outline.collapseAll(containers: rows)
+ 	}
+ 	
+ 	override public func undo() {

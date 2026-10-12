@@ -1,0 +1,13 @@
+diff --git a/Zavala/Editor/EditorViewController.swift b/Zavala/Editor/EditorViewController.swift
+index 6182c20a..c827982f 100644
+--- a/Zavala/Editor/EditorViewController.swift
++++ b/Zavala/Editor/EditorViewController.swift
+@@ -3090,7 +3090,7 @@ private extension EditorViewController {
+ 			if newCursorIndex == -1 {
+ 				moveCursorToTagInput()
+ 			} else {
+-				moveCursorToRow(index: newCursorIndex, toStart: changes.cursorMoveIsToStart, toNote: changes.cursorMoveIsToNote)
++				moveCursorToRow(index: newCursorIndex, toStart: true, toNote: changes.cursorMoveIsToNote)
+ 			}
+ 		}
+ 		

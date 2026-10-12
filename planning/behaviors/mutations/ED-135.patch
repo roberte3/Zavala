@@ -1,0 +1,13 @@
+diff --git a/VinOutlineKit/Sources/VinOutlineKit/Outline.swift b/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
+index 4b6bffc0..31e046f9 100644
+--- a/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
++++ b/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
+@@ -3217,7 +3217,7 @@ private extension Outline {
+ 		if isCompletedFilterOn {
+ 			var changes = rebuildShadowTable()
+ 			if let firstComplete = changes.deletes?.sorted().first, firstComplete > 0 {
+-				changes.newCursorIndex = firstComplete - 1
++				changes.newCursorIndex = firstComplete
+ 			} else {
+ 				changes.newCursorIndex = 0
+ 			}

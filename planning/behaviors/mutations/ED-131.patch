@@ -1,0 +1,12 @@
+diff --git a/VinOutlineKit/Sources/VinOutlineKit/Outline.swift b/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
+index 4b6bffc0..67322452 100644
+--- a/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
++++ b/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
+@@ -3200,6 +3200,7 @@ private extension Outline {
+ 			if isComplete != row.isComplete {
+ 				if isComplete {
+ 					row.complete()
++					row.rows.forEach { $0.complete() }
+ 				} else {
+ 					row.uncomplete()
+ 				}

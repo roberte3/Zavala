@@ -1,0 +1,13 @@
+diff --git a/VinOutlineKit/Sources/VinOutlineKit/RowVisitors/TransientDataVisitor.swift b/VinOutlineKit/Sources/VinOutlineKit/RowVisitors/TransientDataVisitor.swift
+index d01ec6a2..45a0fbe6 100644
+--- a/VinOutlineKit/Sources/VinOutlineKit/RowVisitors/TransientDataVisitor.swift
++++ b/VinOutlineKit/Sources/VinOutlineKit/RowVisitors/TransientDataVisitor.swift
+@@ -44,7 +44,7 @@ final class TransientDataVisitor {
+ 				shadowTable.append(visited)
+ 			}
+ 			
+-			if (!visited.isExpanded && isSearching == .notSearching) || shouldFilter {
++			if shouldFilter {
+ 				addingToShadowTable = false
+ 				addingToShadowTableSuspended = true
+ 			}

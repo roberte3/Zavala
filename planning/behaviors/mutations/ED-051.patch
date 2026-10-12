@@ -1,0 +1,13 @@
+diff --git a/VinOutlineKit/Sources/VinOutlineKit/Outline.swift b/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
+index 4b6bffc0..41b92503 100644
+--- a/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
++++ b/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
+@@ -2194,7 +2194,7 @@ public final class Outline: RowContainer, Identifiable, Equatable, Hashable {
+ 		let topicRange = NSRange(location: 0, length: cursorPosition)
+ 		let topicText = topic.attributedSubstring(from: topicRange)
+ 
+-		let newCursorIndex = createRow(newRow, parent: toParent, index: toIndex, afterRow: row, rowStrings: .topic(topicText), childRowIndent: childRowIndent)
++		let newCursorIndex = createRow(newRow, parent: toParent, index: toIndex, afterRow: row, rowStrings: .topic(topicText), childRowIndent: false)
+ 		
+ 		guard isBeingViewed else { return }
+ 		guard let rowShadowTableIndex = row.shadowTableIndex else { return }

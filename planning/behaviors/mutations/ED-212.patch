@@ -1,0 +1,13 @@
+diff --git a/VinOutlineKit/Sources/VinOutlineKit/Commands/SortRowsCommand.swift b/VinOutlineKit/Sources/VinOutlineKit/Commands/SortRowsCommand.swift
+index 110d32d4..a5ec73f5 100644
+--- a/VinOutlineKit/Sources/VinOutlineKit/Commands/SortRowsCommand.swift
++++ b/VinOutlineKit/Sources/VinOutlineKit/Commands/SortRowsCommand.swift
+@@ -23,7 +23,7 @@ public final class SortRowsCommand: OutlineCommand {
+ 		}
+ 
+ 		let sortedRows = rows.sorted { left, right in
+-			return (left.topic?.string ?? "").caseInsensitiveCompare(right.topic?.string ?? "") == .orderedAscending
++			return (left.topic?.string ?? "").compare(right.topic?.string ?? "") == .orderedAscending
+ 		}
+ 		
+ 		let startIndex = displayOrderRows.first!.parent!.firstIndexOfRow(displayOrderRows.first!) ?? 0

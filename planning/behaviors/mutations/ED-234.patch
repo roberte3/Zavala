@@ -1,0 +1,12 @@
+diff --git a/Zavala/Editor/EditorViewController.swift b/Zavala/Editor/EditorViewController.swift
+index 6182c20a..5fc712af 100644
+--- a/Zavala/Editor/EditorViewController.swift
++++ b/Zavala/Editor/EditorViewController.swift
+@@ -3561,7 +3561,6 @@ private extension EditorViewController {
+ 		guard shadowTableIndex < (shadowTable.count - 1) else {
+ 			let indexPath = IndexPath(row: shadowTableIndex, section: adjustedRowsSection)
+ 			if let rowCell = self.collectionView.cellForItem(at: indexPath) as? EditorRowViewCell {
+-				rowCell.moveToTopicEnd()
+ 			}
+ 			return
+ 		}

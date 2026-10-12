@@ -1,0 +1,13 @@
+diff --git a/VinOutlineKit/Sources/VinOutlineKit/Commands/LocalDropRowCommand.swift b/VinOutlineKit/Sources/VinOutlineKit/Commands/LocalDropRowCommand.swift
+index 268d5c49..df019acd 100644
+--- a/VinOutlineKit/Sources/VinOutlineKit/Commands/LocalDropRowCommand.swift
++++ b/VinOutlineKit/Sources/VinOutlineKit/Commands/LocalDropRowCommand.swift
+@@ -23,7 +23,7 @@ public final class LocalDropRowCommand: OutlineCommand {
+ 			let row = rows[i]
+ 			rowMoves.append(Outline.RowMove(row: row, toParent: toParent, toChildIndex: toChildIndex + i))
+ 			guard let oldParent = row.parent, let oldChildIndex = oldParent.firstIndexOfRow(row) else { continue }
+-			restoreMoves.append(Outline.RowMove(row: row, toParent: oldParent, toChildIndex: oldChildIndex))
++			restoreMoves.append(Outline.RowMove(row: row, toParent: oldParent, toChildIndex: 0))
+ 		}
+ 
+ 		super.init(actionName: actionName, undoManager: undoManager, delegate: delegate, outline: outline)

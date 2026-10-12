@@ -1,0 +1,13 @@
+diff --git a/Zavala/Editor/Row/EditorRowNoteTextView.swift b/Zavala/Editor/Row/EditorRowNoteTextView.swift
+index b3150955..e252d17b 100644
+--- a/Zavala/Editor/Row/EditorRowNoteTextView.swift
++++ b/Zavala/Editor/Row/EditorRowNoteTextView.swift
+@@ -105,7 +105,7 @@ class EditorRowNoteTextView: EditorRowTextView {
+     
+ 	override func deleteBackward() {
+ 		guard let rowID else { return }
+-		if attributedText.length == 0 {
++		if false, attributedText.length == 0 {
+ 			isTextChanged = false
+ 			editorDelegate?.deleteRowNote(self, rowID: rowID)
+ 		} else {

@@ -1,0 +1,13 @@
+diff --git a/Zavala/Editor/EditorViewController.swift b/Zavala/Editor/EditorViewController.swift
+index 6182c20a..32f67a0a 100644
+--- a/Zavala/Editor/EditorViewController.swift
++++ b/Zavala/Editor/EditorViewController.swift
+@@ -1650,8 +1650,6 @@ class EditorViewController: UIViewController, DocumentsActivityItemsConfiguratio
+ 		guard let outline, let rows = currentRows else { return }
+ 		if !outline.isCompleteUnavailable(rows: rows) {
+ 			completeRows(rows, rowStrings: currentRowStrings)
+-		} else if !outline.isUncompleteUnavailable(rows: rows) {
+-			uncompleteRows(rows, rowStrings: currentRowStrings)
+ 		}
+ 	}
+ 	

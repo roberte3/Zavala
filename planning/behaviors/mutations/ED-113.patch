@@ -1,0 +1,13 @@
+diff --git a/VinOutlineKit/Sources/VinOutlineKit/Outline.swift b/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
+index 4b6bffc0..c184aea9 100644
+--- a/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
++++ b/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
+@@ -2330,7 +2330,7 @@ public final class Outline: RowContainer, Identifiable, Equatable, Hashable {
+ 				reloads.append(row)
+ 			}
+ 			
+-			container.rows.forEach {
++			container.rows.prefix(1).forEach {
+ 				reloads.append($0)
+ 				$0.visit(visitor: collapseVisitor(_:))
+ 			}

@@ -1,0 +1,15 @@
+diff --git a/VinOutlineKit/Sources/VinOutlineKit/Outline.swift b/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
+index 4b6bffc0..4c033b7d 100644
+--- a/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
++++ b/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
+@@ -2394,10 +2394,6 @@ public final class Outline: RowContainer, Identifiable, Equatable, Hashable {
+ 			endCloudKitBatchRequest()
+ 		}
+ 
+-		if rows.count == 1, let row = rows.first, let texts = rowStrings {
+-			updateRowStrings(row, texts)
+-		}
+-		
+ 		let sortedRows = rows.sortedByDisplayOrder()
+ 
+ 		var impacted = [Row]()

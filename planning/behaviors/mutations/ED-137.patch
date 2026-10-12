@@ -1,0 +1,12 @@
+diff --git a/VinOutlineKit/Sources/VinOutlineKit/Outline.swift b/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
+index 4b6bffc0..eec2f070 100644
+--- a/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
++++ b/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
+@@ -1346,6 +1346,7 @@ public final class Outline: RowContainer, Identifiable, Equatable, Hashable {
+ 	
+ 	public func toggleFilterOn() -> OutlineElementChanges {
+ 		isFilterOn = !(isFilterOn ?? false)
++		isCompletedFiltered = true
+ 		documentMetaDataDidChange()
+ 		var changes = rebuildShadowTable()
+ 

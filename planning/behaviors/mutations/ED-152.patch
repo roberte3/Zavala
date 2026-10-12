@@ -1,0 +1,13 @@
+diff --git a/VinOutlineKit/Sources/VinOutlineKit/Outline.swift b/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
+index 4b6bffc0..61ddf965 100644
+--- a/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
++++ b/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
+@@ -1621,7 +1621,7 @@ public final class Outline: RowContainer, Identifiable, Equatable, Hashable {
+ 		}
+ 
+ 		var impacted = [Row: NSAttributedString]()
+-		for row in rows {
++		for row in rows.prefix(1) {
+ 			if row.note != nil {
+ 				impacted[row] = row.note
+ 				row.note = nil

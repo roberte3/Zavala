@@ -1,0 +1,13 @@
+diff --git a/Zavala/Editor/EditorViewController.swift b/Zavala/Editor/EditorViewController.swift
+index 6182c20a..9906bfdb 100644
+--- a/Zavala/Editor/EditorViewController.swift
++++ b/Zavala/Editor/EditorViewController.swift
+@@ -1516,7 +1516,7 @@ class EditorViewController: UIViewController, DocumentsActivityItemsConfiguratio
+ 	
+ 	@objc func focusIn(_ sender: Any?) {
+ 		guard let row = currentRows?.first else { return }
+-		outline?.focusIn(row)
++		_ = row
+ 	}
+ 	
+ 	@objc func focusOut(_ sender: Any?) {

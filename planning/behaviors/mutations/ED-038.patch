@@ -1,0 +1,13 @@
+diff --git a/Zavala/Editor/EditorViewController.swift b/Zavala/Editor/EditorViewController.swift
+index 6182c20a..eb1be5b1 100644
+--- a/Zavala/Editor/EditorViewController.swift
++++ b/Zavala/Editor/EditorViewController.swift
+@@ -1593,7 +1593,7 @@ class EditorViewController: UIViewController, DocumentsActivityItemsConfiguratio
+ 	
+ 	@objc func addRowBelow(_ sender: Any?) {
+ 		guard let rows = currentRows else { return }
+-		createRow(afterRows: rows)
++		createRow(beforeRows: rows, moveCursor: true)
+ 	}
+ 	
+ 	@objc func createRowInside(_ sender: Any?) {

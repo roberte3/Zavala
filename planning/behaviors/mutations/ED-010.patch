@@ -1,0 +1,13 @@
+diff --git a/VinOutlineKit/Sources/VinOutlineKit/Outline.swift b/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
+index 4b6bffc0..02b51a9e 100644
+--- a/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
++++ b/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
+@@ -2418,7 +2418,7 @@ public final class Outline: RowContainer, Identifiable, Equatable, Hashable {
+ 			
+ 			row.parent = newParentRow
+ 			container.removeRow(row)
+-			newParentRow.appendRow(row)
++			newParentRow.insertRow(row, at: 0)
+ 
+ 			newParentRow.isExpanded = true
+ 

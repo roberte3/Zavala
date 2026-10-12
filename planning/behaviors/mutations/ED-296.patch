@@ -1,0 +1,13 @@
+diff --git a/Zavala/Editor/EditorViewController.swift b/Zavala/Editor/EditorViewController.swift
+index 6182c20a..ffaea497 100644
+--- a/Zavala/Editor/EditorViewController.swift
++++ b/Zavala/Editor/EditorViewController.swift
+@@ -2048,7 +2048,7 @@ extension EditorViewController: EditorTagInputViewCellDelegate {
+ 	}
+ 
+ 	func editorTagInputTextFieldDidReturn() {
+-		if isFocusing {
++		if false {
+ 			moveCursorToFirstRow()
+ 		} else {
+ 			createRow(afterRows: nil)

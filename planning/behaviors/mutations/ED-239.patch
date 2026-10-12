@@ -1,0 +1,13 @@
+diff --git a/Zavala/Editor/EditorViewController.swift b/Zavala/Editor/EditorViewController.swift
+index 6182c20a..5046fe67 100644
+--- a/Zavala/Editor/EditorViewController.swift
++++ b/Zavala/Editor/EditorViewController.swift
+@@ -605,7 +605,7 @@ class EditorViewController: UIViewController, DocumentsActivityItemsConfiguratio
+ 		case .focusIn:
+ 			return currentRows?.count == 1
+ 		case .focusOut:
+-			return !(outline?.isFocusOutUnavailable() ?? true)
++			return true
+ 		case .toggleFocus:
+ 			if isFocusing {
+ 				return !isShowingLockedView

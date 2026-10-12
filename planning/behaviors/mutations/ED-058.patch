@@ -1,0 +1,13 @@
+diff --git a/VinOutlineKit/Sources/VinOutlineKit/Commands/JoinRowCommand.swift b/VinOutlineKit/Sources/VinOutlineKit/Commands/JoinRowCommand.swift
+index 35253bd7..a6f013e9 100644
+--- a/VinOutlineKit/Sources/VinOutlineKit/Commands/JoinRowCommand.swift
++++ b/VinOutlineKit/Sources/VinOutlineKit/Commands/JoinRowCommand.swift
+@@ -46,7 +46,7 @@ public final class JoinRowCommand: OutlineCommand {
+ 	}
+ 	
+ 	public override func undo() {
+-		outline.splitRow(newRow: bottomRow, toParent: restoreParent, toIndex: restoreIndex, row: topRow, topic: undoTopic, cursorPosition: splitCursorPosition)
++		outline.splitRow(newRow: bottomRow, toParent: restoreParent, toIndex: restoreIndex, row: topRow, topic: undoTopic, cursorPosition: splitCursorPosition + 1)
+ 	}
+ 	
+ }

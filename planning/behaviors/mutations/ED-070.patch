@@ -1,0 +1,12 @@
+diff --git a/Zavala/Editor/Row/EditorRowTopicTextView.swift b/Zavala/Editor/Row/EditorRowTopicTextView.swift
+index b63c01be..5ee61b59 100644
+--- a/Zavala/Editor/Row/EditorRowTopicTextView.swift
++++ b/Zavala/Editor/Row/EditorRowTopicTextView.swift
+@@ -137,7 +137,6 @@ class EditorRowTopicTextView: EditorRowTextView {
+ 		
+ 		if attributedText.length == 0 && !rowHasChildren {
+ 			isTextChanged = false
+-			editorDelegate?.deleteRow(self, rowID: rowID, rowStrings: rowStrings)
+ 			return
+ 		}
+ 		

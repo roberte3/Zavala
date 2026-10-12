@@ -1,0 +1,12 @@
+diff --git a/VinOutlineKit/Sources/VinOutlineKit/Commands/MoveRowDownCommand.swift b/VinOutlineKit/Sources/VinOutlineKit/Commands/MoveRowDownCommand.swift
+index 4862b994..5b07e292 100644
+--- a/VinOutlineKit/Sources/VinOutlineKit/Commands/MoveRowDownCommand.swift
++++ b/VinOutlineKit/Sources/VinOutlineKit/Commands/MoveRowDownCommand.swift
+@@ -30,7 +30,6 @@ public final class MoveRowDownCommand: OutlineCommand {
+ 	}
+ 	
+ 	public override func undo() {
+-		outline.moveRowsUp(rows, rowStrings: oldRowStrings)
+ 	}
+ 	
+ }

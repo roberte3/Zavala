@@ -1,0 +1,12 @@
+diff --git a/Zavala/Editor/EditorViewController.swift b/Zavala/Editor/EditorViewController.swift
+index 6182c20a..9ebd9722 100644
+--- a/Zavala/Editor/EditorViewController.swift
++++ b/Zavala/Editor/EditorViewController.swift
+@@ -3685,7 +3685,6 @@ private extension EditorViewController {
+ 			for row in rows {
+ 				if cursorRow.isDecendent(row), let newCursorIndex = row.shadowTableIndex {
+ 					if let rowCell = collectionView.cellForItem(at: IndexPath(row: newCursorIndex, section: adjustedRowsSection)) as? EditorRowViewCell {
+-						rowCell.moveToTopicEnd()
+ 					}
+ 				}
+ 			}

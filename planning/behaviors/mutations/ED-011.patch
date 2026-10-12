@@ -1,0 +1,13 @@
+diff --git a/VinOutlineKit/Sources/VinOutlineKit/Outline.swift b/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
+index 4b6bffc0..f8509177 100644
+--- a/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
++++ b/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
+@@ -2379,7 +2379,7 @@ public final class Outline: RowContainer, Identifiable, Equatable, Hashable {
+ 	
+ 	public func isMoveRowsRightUnavailable(rows: [Row]) -> Bool {
+ 		for row in rows {
+-			if let rowIndex = row.parent?.firstIndexOfRow(row), rowIndex > 0 {
++			if let rowIndex = row.parent?.firstIndexOfRow(row), rowIndex >= 0 {
+ 				return false
+ 			}
+ 		}

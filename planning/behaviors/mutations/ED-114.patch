@@ -1,0 +1,13 @@
+diff --git a/Zavala/Editor/EditorViewController.swift b/Zavala/Editor/EditorViewController.swift
+index 6182c20a..3a351f50 100644
+--- a/Zavala/Editor/EditorViewController.swift
++++ b/Zavala/Editor/EditorViewController.swift
+@@ -1581,7 +1581,7 @@ class EditorViewController: UIViewController, DocumentsActivityItemsConfiguratio
+ 	
+ 	@objc func collapseParentRow(_ sender: Any?) {
+ 		guard let rows = currentRows else { return }
+-		let parentRows = rows.compactMap { $0.parent as? Row }
++		let parentRows = rows
+ 		guard !parentRows.isEmpty else { return }
+ 		collapse(rows: parentRows)
+ 	}

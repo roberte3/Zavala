@@ -1,0 +1,13 @@
+diff --git a/Zavala/Editor/Row/EditorRowTextView.swift b/Zavala/Editor/Row/EditorRowTextView.swift
+index 0daf2828..6849fe9e 100644
+--- a/Zavala/Editor/Row/EditorRowTextView.swift
++++ b/Zavala/Editor/Row/EditorRowTextView.swift
+@@ -512,7 +512,7 @@ class EditorRowTextView: UITextView, EditorTextInput {
+ 				if textStorage.attribute(.textHighlightStyle, at: selectedRange.location, effectiveRange: nil) as? NSAttributedString.TextHighlightStyle == .default {
+ 					textStorage.removeAttribute(.textHighlightStyle, range: selectedRange)
+ 				} else {
+-					textStorage.addAttribute(.textHighlightStyle, value: NSAttributedString.TextHighlightStyle.default, range: selectedRange)
++					textStorage.addAttribute(.textHighlightStyle, value: NSAttributedString.TextHighlightStyle.default, range: NSRange(location: selectedRange.location, length: 0))
+ 				}
+ 			}
+ 		} else {

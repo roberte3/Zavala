@@ -1,0 +1,13 @@
+diff --git a/Zavala/Editor/EditorViewController.swift b/Zavala/Editor/EditorViewController.swift
+index 6182c20a..ffeba145 100644
+--- a/Zavala/Editor/EditorViewController.swift
++++ b/Zavala/Editor/EditorViewController.swift
+@@ -3624,7 +3624,7 @@ private extension EditorViewController {
+ 		case (false, false):
+ 			collapse(rows: [row])
+ 		case (false, true):
+-			collapseAll(containers: [row])
++			collapse(rows: [row])
+ 		}
+ 	}
+ 

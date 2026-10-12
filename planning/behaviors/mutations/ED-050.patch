@@ -1,0 +1,13 @@
+diff --git a/Zavala/Editor/Row/EditorRowTopicTextView.swift b/Zavala/Editor/Row/EditorRowTopicTextView.swift
+index b63c01be..6e400d1c 100644
+--- a/Zavala/Editor/Row/EditorRowTopicTextView.swift
++++ b/Zavala/Editor/Row/EditorRowTopicTextView.swift
+@@ -320,7 +320,7 @@ extension EditorRowTopicTextView: UITextViewDelegate {
+ 				editorDelegate?.createRow(self, afterRowID: rowID, rowStrings: rowStrings)
+ 			} else {
+ 				isTextChanged = false
+-				editorDelegate?.splitRow(self, rowID: rowID, topic: cleansedAttributedText, cursorPosition: cursorPosition)
++				editorDelegate?.createRow(self, afterRowID: rowID, rowStrings: rowStrings)
+ 			}
+ 			return false
+ 		default:

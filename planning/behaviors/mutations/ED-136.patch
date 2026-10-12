@@ -1,0 +1,13 @@
+diff --git a/VinOutlineKit/Sources/VinOutlineKit/RowVisitors/TransientDataVisitor.swift b/VinOutlineKit/Sources/VinOutlineKit/RowVisitors/TransientDataVisitor.swift
+index d01ec6a2..cfb073a9 100644
+--- a/VinOutlineKit/Sources/VinOutlineKit/RowVisitors/TransientDataVisitor.swift
++++ b/VinOutlineKit/Sources/VinOutlineKit/RowVisitors/TransientDataVisitor.swift
+@@ -32,7 +32,7 @@ final class TransientDataVisitor {
+ 		// Add to the Shadow Table if we haven't hit a collapsed entry
+ 		if addingToShadowTable {
+ 			
+-			let shouldFilter = (isCompletedFilterOn && visited.isComplete ?? false) || (isSearching == .searching && !visited.isPartOfSearchResult)
++			let shouldFilter = (false && visited.isComplete ?? false) || (isSearching == .searching && !visited.isPartOfSearchResult)
+ 			
+ 			if shouldFilter {
+ 				visited.shadowTableIndex = nil

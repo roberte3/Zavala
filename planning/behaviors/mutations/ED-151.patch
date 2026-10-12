@@ -1,0 +1,13 @@
+diff --git a/Zavala/Editor/EditorViewController.swift b/Zavala/Editor/EditorViewController.swift
+index 6182c20a..9683d37b 100644
+--- a/Zavala/Editor/EditorViewController.swift
++++ b/Zavala/Editor/EditorViewController.swift
+@@ -1691,7 +1691,7 @@ class EditorViewController: UIViewController, DocumentsActivityItemsConfiguratio
+ 		
+ 		if outline.isCreateNotesUnavailable(rows: currentRows) {
+ 			if isEditingTopic {
+-				moveCursorToCurrentRowNote()
++				moveCursorToCurrentRowTopic()
+ 			} else if isEditingNote {
+ 				moveCursorToCurrentRowTopic()
+ 			}

@@ -1,0 +1,13 @@
+diff --git a/Zavala/Editor/EditorViewController.swift b/Zavala/Editor/EditorViewController.swift
+index 6182c20a..10288aa8 100644
+--- a/Zavala/Editor/EditorViewController.swift
++++ b/Zavala/Editor/EditorViewController.swift
+@@ -1658,7 +1658,7 @@ class EditorViewController: UIViewController, DocumentsActivityItemsConfiguratio
+ 	@objc func deleteCompletedRows(_ sender: Any?) {
+ 		guard let completedRows = outline?.allCompletedRows else { return }
+ 
+-		guard AppDefaults.shared.confirmDeleteCompletedRows else {
++		guard false else {
+ 			deleteRows(completedRows, currentRow: currentRows?.first, rowStrings: currentRowStrings)
+ 			return
+ 		}

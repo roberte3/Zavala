@@ -1,0 +1,13 @@
+diff --git a/Zavala/Editor/EditorViewController.swift b/Zavala/Editor/EditorViewController.swift
+index 6182c20a..b2d18590 100644
+--- a/Zavala/Editor/EditorViewController.swift
++++ b/Zavala/Editor/EditorViewController.swift
+@@ -1696,7 +1696,7 @@ class EditorViewController: UIViewController, DocumentsActivityItemsConfiguratio
+ 				moveCursorToCurrentRowTopic()
+ 			}
+ 		} else {
+-			createRowNotes(currentRows, rowStrings: currentRowStrings)
++			moveCursorToCurrentRowNote()
+ 		}
+ 	}
+ 

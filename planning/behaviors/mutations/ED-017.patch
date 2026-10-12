@@ -1,0 +1,13 @@
+diff --git a/VinOutlineKit/Sources/VinOutlineKit/Outline.swift b/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
+index 4b6bffc0..f7ed9e30 100644
+--- a/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
++++ b/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
+@@ -2471,7 +2471,7 @@ public final class Outline: RowContainer, Identifiable, Equatable, Hashable {
+ 		var impacted = [Row]()
+ 		var reloads = Set<Int>()
+ 		
+-		for row in rows.sortedWithDecendentsFiltered().reversed() {
++		for row in rows.sortedWithDecendentsFiltered() {
+ 			guard let oldParent = row.parent as? Row,
+ 				  let oldRowIndex = oldParent.rows.firstIndex(of: row),
+ 				  let newParent = oldParent.parent,

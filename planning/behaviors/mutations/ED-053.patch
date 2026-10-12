@@ -1,0 +1,13 @@
+diff --git a/Zavala/Editor/Row/EditorRowTopicTextView.swift b/Zavala/Editor/Row/EditorRowTopicTextView.swift
+index b63c01be..84902440 100644
+--- a/Zavala/Editor/Row/EditorRowTopicTextView.swift
++++ b/Zavala/Editor/Row/EditorRowTopicTextView.swift
+@@ -182,7 +182,7 @@ class EditorRowTopicTextView: EditorRowTextView {
+ 		if cursorPosition == 0 {
+ 			editorDelegate?.createRow(self, beforeRowID: rowID, rowStrings: rowStrings, moveCursor: false)
+ 		} else {
+-			editorDelegate?.splitRow(self, rowID: rowID, topic: cleansedAttributedText, cursorPosition: cursorPosition)
++			editorDelegate?.createRow(self, beforeRowID: rowID, rowStrings: rowStrings, moveCursor: false)
+ 		}
+ 	}
+ 	

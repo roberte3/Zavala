@@ -1,0 +1,13 @@
+diff --git a/VinOutlineKit/Sources/VinOutlineKit/Commands/GroupRowsCommand.swift b/VinOutlineKit/Sources/VinOutlineKit/Commands/GroupRowsCommand.swift
+index 36dc22ab..f775bc70 100644
+--- a/VinOutlineKit/Sources/VinOutlineKit/Commands/GroupRowsCommand.swift
++++ b/VinOutlineKit/Sources/VinOutlineKit/Commands/GroupRowsCommand.swift
+@@ -26,7 +26,7 @@ public final class GroupRowsCommand: OutlineCommand {
+ 	
+ 	public override func perform() {
+ 		guard let firstRow = rows.sortedByDisplayOrder().first else { return }
+-		outline.createRows([newRow], beforeRow: firstRow, moveCursor: true)
++		outline.createRows([newRow], beforeRow: firstRow, moveCursor: false)
+ 		moveRightRows = outline.moveRowsRight(rows, rowStrings: newRowStrings)
+ 	}
+ 	

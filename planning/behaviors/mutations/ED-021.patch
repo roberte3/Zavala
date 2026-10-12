@@ -1,0 +1,12 @@
+diff --git a/VinOutlineKit/Sources/VinOutlineKit/Outline.swift b/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
+index 4b6bffc0..c53f0045 100644
+--- a/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
++++ b/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
+@@ -2489,7 +2489,6 @@ public final class Outline: RowContainer, Identifiable, Equatable, Hashable {
+ 			
+ 			row.parent = oldParent.parent
+ 
+-			autoCompleteUncomplete(row: oldParent)
+ 			if let parentRowIndex = oldParent.shadowTableIndex {
+ 				reloads.insert(parentRowIndex)
+ 			}

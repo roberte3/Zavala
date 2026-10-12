@@ -1,0 +1,13 @@
+diff --git a/VinOutlineKit/Sources/VinOutlineKit/Outline.swift b/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
+index 4b6bffc0..cc25be92 100644
+--- a/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
++++ b/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
+@@ -1327,8 +1327,6 @@ public final class Outline: RowContainer, Identifiable, Equatable, Hashable {
+ 	public func shouldMoveLeftOnReturn(row: Row) -> Bool {
+ 		guard row.topic == nil else { return false }
+ 		
+-		guard row.parent is Row else { return false }
+-		
+ 		if row.parent?.rows.last == row {
+ 			return true
+ 		} else {

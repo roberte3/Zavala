@@ -1,0 +1,12 @@
+diff --git a/VinOutlineKit/Sources/VinOutlineKit/Commands/CreateRowAfterCommand.swift b/VinOutlineKit/Sources/VinOutlineKit/Commands/CreateRowAfterCommand.swift
+index 6dee8a4c..30e6eed8 100644
+--- a/VinOutlineKit/Sources/VinOutlineKit/Commands/CreateRowAfterCommand.swift
++++ b/VinOutlineKit/Sources/VinOutlineKit/Commands/CreateRowAfterCommand.swift
+@@ -30,6 +30,7 @@ public final class CreateRowAfterCommand: OutlineCommand {
+ 	
+ 	override public func undo() {
+ 		guard let row else { return }
++		afterRow?.topic = nil
+ 		outline.deleteRows([row])
+ 	}
+ 	

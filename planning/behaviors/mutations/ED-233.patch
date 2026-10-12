@@ -1,0 +1,12 @@
+diff --git a/Zavala/Editor/EditorViewController.swift b/Zavala/Editor/EditorViewController.swift
+index 6182c20a..07ec601e 100644
+--- a/Zavala/Editor/EditorViewController.swift
++++ b/Zavala/Editor/EditorViewController.swift
+@@ -3498,7 +3498,6 @@ private extension EditorViewController {
+ 		guard let rowID = topicTextView.rowID,
+ 			  let row = outline?.findRow(id: rowID),
+ 			  let shadowTableIndex = row.shadowTableIndex, shadowTableIndex > 0 else {
+-			moveCursorToTagInput()
+ 			return
+ 		}
+ 		

@@ -1,0 +1,12 @@
+diff --git a/VinOutlineKit/Sources/VinOutlineKit/Commands/GroupRowsCommand.swift b/VinOutlineKit/Sources/VinOutlineKit/Commands/GroupRowsCommand.swift
+index 36dc22ab..5c0aea7e 100644
+--- a/VinOutlineKit/Sources/VinOutlineKit/Commands/GroupRowsCommand.swift
++++ b/VinOutlineKit/Sources/VinOutlineKit/Commands/GroupRowsCommand.swift
+@@ -33,7 +33,6 @@ public final class GroupRowsCommand: OutlineCommand {
+ 	public override func undo() {
+ 		guard let moveRightRows else { return }
+ 		outline.moveRowsLeft(moveRightRows, rowStrings: oldRowStrings)
+-		outline.deleteRows([newRow])
+ 	}
+ 	
+ }

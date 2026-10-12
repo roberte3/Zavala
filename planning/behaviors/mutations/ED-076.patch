@@ -1,0 +1,13 @@
+diff --git a/VinOutlineKit/Sources/VinOutlineKit/Commands/DeleteRowCommand.swift b/VinOutlineKit/Sources/VinOutlineKit/Commands/DeleteRowCommand.swift
+index 2d38b3bd..561579d9 100644
+--- a/VinOutlineKit/Sources/VinOutlineKit/Commands/DeleteRowCommand.swift
++++ b/VinOutlineKit/Sources/VinOutlineKit/Commands/DeleteRowCommand.swift
+@@ -46,7 +46,7 @@ public final class DeleteRowCommand: OutlineCommand {
+ 	
+ 	public override func undo() {
+ 		for row in rows.sortedByDisplayOrder() {
+-			outline.createRows([row], afterRow: afterRows[row])
++			outline.createRows([row], afterRow: nil)
+ 		}
+ 	}
+ 	

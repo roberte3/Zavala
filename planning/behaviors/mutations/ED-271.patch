@@ -1,0 +1,13 @@
+diff --git a/Zavala/Editor/Row/EditorRowTextView.swift b/Zavala/Editor/Row/EditorRowTextView.swift
+index 0daf2828..08b89944 100644
+--- a/Zavala/Editor/Row/EditorRowTextView.swift
++++ b/Zavala/Editor/Row/EditorRowTextView.swift
+@@ -479,6 +479,8 @@ class EditorRowTextView: UITextView, EditorTextInput {
+         fatalError("editLink has not been implemented")
+     }
+ 
++	override func toggleItalics(_ sender: Any?) {}
++
+ 	@objc func toggleCodeInline(_ sender: Any?) {
+ 		// Save the current string so that any pending typing is committed as its own undoable action
+ 		saveText()

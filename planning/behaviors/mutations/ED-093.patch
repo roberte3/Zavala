@@ -1,0 +1,13 @@
+diff --git a/VinOutlineKit/Sources/VinOutlineKit/Outline.swift b/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
+index 4b6bffc0..1540a644 100644
+--- a/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
++++ b/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
+@@ -2533,7 +2533,7 @@ public final class Outline: RowContainer, Identifiable, Equatable, Hashable {
+ 			updateRowStrings(row, texts)
+ 		}
+ 
+-		for row in rows.sortedByDisplayOrder() {
++		for row in rows.sortedByReverseDisplayOrder() {
+ 			if let parent = row.parent, let index = parent.firstIndexOfRow(row), index - 1 > -1 {
+ 				parent.removeRow(row)
+ 				parent.insertRow(row, at: index - 1)

@@ -1,0 +1,13 @@
+diff --git a/VinOutlineKit/Sources/VinOutlineKit/Outline.swift b/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
+index 4b6bffc0..66dc4925 100644
+--- a/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
++++ b/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
+@@ -1741,7 +1741,7 @@ public final class Outline: RowContainer, Identifiable, Equatable, Hashable {
+ 	func joinRows(topRow: Row, bottomRow: Row, topic: NSAttributedString? = nil) {
+ 		// If we Join a Row with children we need to transfer the child Rows or they will
+ 		// be orphaned. For now, I've opted to just not allow this action.
+-		guard bottomRow.rows.count == 0 else { return }
++
+ 
+ 		beginCloudKitBatchRequest()
+ 		defer {

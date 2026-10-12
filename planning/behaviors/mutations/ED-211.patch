@@ -1,0 +1,13 @@
+diff --git a/VinOutlineKit/Sources/VinOutlineKit/Outline.swift b/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
+index 4b6bffc0..025c9b5d 100644
+--- a/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
++++ b/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
+@@ -1759,7 +1759,7 @@ public final class Outline: RowContainer, Identifiable, Equatable, Hashable {
+ 	}
+ 	
+ 	public func isGroupRowsUnavailable(rows: [Row]) -> Bool {
+-		return !areRowsContiguous(rows: rows)
++		return rows.isEmpty
+ 	}
+ 	
+ 	public func isSortRowsUnavailable(rows: [Row]) -> Bool {

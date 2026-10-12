@@ -1,0 +1,13 @@
+diff --git a/Zavala/Editor/EditorViewController.swift b/Zavala/Editor/EditorViewController.swift
+index 6182c20a..5eda38a6 100644
+--- a/Zavala/Editor/EditorViewController.swift
++++ b/Zavala/Editor/EditorViewController.swift
+@@ -2166,8 +2166,6 @@ extension EditorViewController: EditorRowViewCellDelegate {
+ 			NSMutableAttributedString()
+ 		}
+ 		
+-		topic.append(attrText)
+-		
+ 		joinRow(row, topic: topic)
+ 	}
+ 

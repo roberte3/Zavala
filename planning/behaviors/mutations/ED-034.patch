@@ -1,0 +1,13 @@
+diff --git a/Zavala/Editor/Row/EditorRowTopicTextView.swift b/Zavala/Editor/Row/EditorRowTopicTextView.swift
+index b63c01be..ce84cc08 100644
+--- a/Zavala/Editor/Row/EditorRowTopicTextView.swift
++++ b/Zavala/Editor/Row/EditorRowTopicTextView.swift
+@@ -313,7 +313,7 @@ extension EditorRowTopicTextView: UITextViewDelegate {
+ 					editorDelegate?.moveRowLeft(self, rowID: rowID)
+ 				} else {
+ 					isTextChanged = false
+-					editorDelegate?.createRow(self, beforeRowID: rowID, rowStrings: rowStrings, moveCursor: false)
++					editorDelegate?.createRow(self, beforeRowID: rowID, rowStrings: rowStrings, moveCursor: true)
+ 				}
+ 			} else if cursorIsAtEnd {
+ 				isTextChanged = false

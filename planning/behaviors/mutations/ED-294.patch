@@ -1,0 +1,12 @@
+diff --git a/Zavala/Editor/EditorViewController.swift b/Zavala/Editor/EditorViewController.swift
+index 6182c20a..0967e289 100644
+--- a/Zavala/Editor/EditorViewController.swift
++++ b/Zavala/Editor/EditorViewController.swift
+@@ -2993,7 +2993,6 @@ private extension EditorViewController {
+ 				moveCursorToFirstRow()
+ 			}
+ 		} else if let textView = currentTextInput as? EditorTitleTextView, !textView.isSelecting {
+-			moveCursorToTagInput()
+ 		}
+ 		
+ 		goingUpOrDownTask?.cancel()

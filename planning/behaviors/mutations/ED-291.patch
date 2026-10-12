@@ -1,0 +1,12 @@
+diff --git a/Zavala/Editor/Title/EditorTitleContentView.swift b/Zavala/Editor/Title/EditorTitleContentView.swift
+index ab910279..ec83e115 100644
+--- a/Zavala/Editor/Title/EditorTitleContentView.swift
++++ b/Zavala/Editor/Title/EditorTitleContentView.swift
+@@ -98,7 +98,6 @@ extension EditorTitleContentView: UITextViewDelegate {
+ 	func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+ 		switch text {
+ 		case "\n":
+-			titleConfiguration.delegate?.editorTitleMoveToTagInput()
+ 			return false
+ 		default:
+ 			return true

@@ -1,0 +1,16 @@
+diff --git a/VinOutlineKit/Sources/VinOutlineKit/Commands/MoveRowDownCommand.swift b/VinOutlineKit/Sources/VinOutlineKit/Commands/MoveRowDownCommand.swift
+index 4862b994..f2b22679 100644
+--- a/VinOutlineKit/Sources/VinOutlineKit/Commands/MoveRowDownCommand.swift
++++ b/VinOutlineKit/Sources/VinOutlineKit/Commands/MoveRowDownCommand.swift
+@@ -25,7 +25,11 @@ public final class MoveRowDownCommand: OutlineCommand {
+ 		super.init(actionName: actionName, undoManager: undoManager, delegate: delegate, outline: outline)
+ 	}
+ 	
++	var hasPerformed = false
++
+ 	public override func perform() {
++		guard !hasPerformed else { return }
++		hasPerformed = true
+ 		outline.moveRowsDown(rows, rowStrings: newRowStrings)
+ 	}
+ 	

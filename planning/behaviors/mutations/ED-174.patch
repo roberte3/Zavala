@@ -1,0 +1,13 @@
+diff --git a/VinOutlineKit/Sources/VinOutlineKit/Outline.swift b/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
+index 4b6bffc0..fd09ceb2 100644
+--- a/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
++++ b/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
+@@ -2150,7 +2150,7 @@ public final class Outline: RowContainer, Identifiable, Equatable, Hashable {
+ 		var newRows = [Row]()
+ 		var idDict = [String: Row]()
+ 
+-		let sortedRows = rows.sortedWithDecendentsFiltered().sortedByReverseDisplayOrder()
++		let sortedRows = rows.sortedWithDecendentsFiltered().sortedByDisplayOrder()
+ 		guard let afterRow = sortedRows.first else { return newRows }
+ 
+ 		func duplicatingVisitor(_ visited: Row) {

@@ -1,0 +1,12 @@
+diff --git a/Zavala/Editor/EditorViewController.swift b/Zavala/Editor/EditorViewController.swift
+index 6182c20a..89d6f1f8 100644
+--- a/Zavala/Editor/EditorViewController.swift
++++ b/Zavala/Editor/EditorViewController.swift
+@@ -3951,6 +3951,7 @@ private extension EditorViewController {
+ 									   rowStrings: rowStrings)
+ 		
+ 		command.execute()
++		collectionView.reloadData()
+ 		scrollIfNecessary()
+ 	}
+ 

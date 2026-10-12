@@ -1,0 +1,17 @@
+diff --git a/Zavala/Editor/EditorViewController.swift b/Zavala/Editor/EditorViewController.swift
+index 6182c20a..b5345b82 100644
+--- a/Zavala/Editor/EditorViewController.swift
++++ b/Zavala/Editor/EditorViewController.swift
+@@ -3063,10 +3063,10 @@ private extension EditorViewController {
+ 		if !hasSectionOtherThanRows {
+ 			if AppDefaults.shared.disableEditorAnimations {
+ 				UIView.performWithoutAnimation {
+-					collectionView.reconfigureItems(at: reloads)
++					collectionView.reloadItems(at: reloads)
+ 				}
+ 			} else {
+-				collectionView.reconfigureItems(at: reloads)
++				collectionView.reloadItems(at: reloads)
+ 			}
+ 		} else {
+ 			if changes.isReloadsAnimatable {

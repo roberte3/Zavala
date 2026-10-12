@@ -1,0 +1,15 @@
+diff --git a/VinOutlineKit/Sources/VinOutlineKit/Outline.swift b/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
+index 4b6bffc0..f67ad34e 100644
+--- a/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
++++ b/VinOutlineKit/Sources/VinOutlineKit/Outline.swift
+@@ -1698,10 +1698,6 @@ public final class Outline: RowContainer, Identifiable, Equatable, Hashable {
+ 			}
+ 		}
+ 
+-		for parentRow in parentRows {
+-			autoCompleteUncomplete(row: parentRow)
+-		}
+-		
+ 		deleteLinkRelationships(for: rows)
+ 		outlineContentDidChange()
+ 		

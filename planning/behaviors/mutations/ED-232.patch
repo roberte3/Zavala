@@ -1,0 +1,13 @@
+diff --git a/Zavala/Editor/Row/EditorRowTopicTextView.swift b/Zavala/Editor/Row/EditorRowTopicTextView.swift
+index b63c01be..b83a0fd0 100644
+--- a/Zavala/Editor/Row/EditorRowTopicTextView.swift
++++ b/Zavala/Editor/Row/EditorRowTopicTextView.swift
+@@ -42,7 +42,7 @@ class EditorRowTopicTextView: EditorRowTextView {
+ 		let controlP = UIKeyCommand(input: "p", modifierFlags: [.control], action: #selector(moveCursorUp(_:)))
+ 		controlP.wantsPriorityOverSystemBehavior = true
+ 
+-		let controlN = UIKeyCommand(input: "n", modifierFlags: [.control], action: #selector(moveCursorDown(_:)))
++		let controlN = UIKeyCommand(input: "n", modifierFlags: [.control], action: #selector(moveCursorUp(_:)))
+ 		controlN.wantsPriorityOverSystemBehavior = true
+ 
+ 		let keys = [

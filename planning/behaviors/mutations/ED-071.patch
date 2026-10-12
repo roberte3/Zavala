@@ -1,0 +1,13 @@
+diff --git a/Zavala/Editor/Row/EditorRowTopicTextView.swift b/Zavala/Editor/Row/EditorRowTopicTextView.swift
+index b63c01be..7dd7321d 100644
+--- a/Zavala/Editor/Row/EditorRowTopicTextView.swift
++++ b/Zavala/Editor/Row/EditorRowTopicTextView.swift
+@@ -135,7 +135,7 @@ class EditorRowTopicTextView: EditorRowTextView {
+ 	override func deleteBackward() {
+ 		guard let rowID else { return }
+ 		
+-		if attributedText.length == 0 && !rowHasChildren {
++		if attributedText.length == 0 {
+ 			isTextChanged = false
+ 			editorDelegate?.deleteRow(self, rowID: rowID, rowStrings: rowStrings)
+ 			return
